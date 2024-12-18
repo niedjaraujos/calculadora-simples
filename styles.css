@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0f011b;
+}
+
+.display {
+    width: 340px;
+    border: none;
+    background-color: #4b304e;
+    border-radius: 5px;
+    height: 70px;
+    text-align: end;
+    outline: none;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #ffffff;
+    padding-bottom: 0;
+}
+
+button.tec2 {
+    background-color: #8080e9;
+}
+
+button {
+    margin: 8px;
+    background-color: #1e0321;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #482f48;
+}
+
+.tec2 {
+    color: #df2222;
+    font-weight: 600;
+}
+
+.operacionais {
+    color: #8080e9;
+}
+
+.numeral {
+    color: #d87093;
+}
+
+.igual {
+    background-color: #8080e9;
+    color: #ffffff;
+}

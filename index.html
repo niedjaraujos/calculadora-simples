@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input class="display" type="" disabled> <!--disabled pra evitar que o usuario mexa diretamente -->
+    <section class="numbers">
+        <div>
+            <button class="tec2" onclick="cleanDisplay()">C</button>
+            <button class="operacionais" onclick="cleanLast()">x</button>
+            <button class="operacionais" onclick="takeValue('%')">%</button>
+            <button class="operacionais" onclick="takeValue('/')">/</button>
+
+        </div>
+
+        <div>
+            <button class="numeral" onclick="takeValue('7')">7</button>
+            <button class="numeral" onclick="takeValue('8')">8</button>
+            <button class="numeral" onclick="takeValue('9')">9</button>
+            <button class="operacionais" onclick="takeValue('*')">*</button>
+        </div>
+
+        <div>
+            <button class="numeral" onclick="takeValue('4')">4</button>
+            <button class="numeral" onclick="takeValue('5')">5</button>
+            <button class="numeral" onclick="takeValue('6')">6</button>
+            <button class="operacionais" onclick="takeValue('-')">-</button>
+        </div>
+
+        <div>
+            <button class="numeral" onclick="takeValue('1')">1</button>
+            <button class="numeral" onclick="takeValue('2')">2</button>
+            <button class="numeral" onclick="takeValue('3')">3</button>
+            <button class="operacionais" onclick="takeValue('+')">+</button>
+        </div>
+
+        <div>
+            <button class="numeral" onclick="takeValue('.')">.</button>
+            <button class="numeral" onclick="takeValue('0')">0</button>
+            <button class="numeral" onclick="takeValue(',')">,</button>
+            <button class="igual" onclick="calculate()">=</button>
+        </div>
+    </section>
+
+</body>
+<script src="app.js"></script>
+
+</html>
