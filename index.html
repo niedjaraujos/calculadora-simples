@@ -1,55 +1,37 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Calculadora</title>
 </head>
-
 <body>
+    <h1>Calculadora Nova</h1>
+    <div class="container">
+        <input type="text" class="display" id="display">
+       <div class="botoes">
+        <button onclick="limpar()">C</button>
+        <button onclick="apagar()">&lt</button>
+        <button onclick="mostrarElemento('/')">/</button>
+        <button onclick="mostrarElemento('*')">*</button>
+        <button onclick="mostrarElemento('7')">7</button>
+        <button onclick="mostrarElemento('8')">8</button>
+        <button onclick="mostrarElemento('9')">9</button>
+        <button onclick="mostrarElemento('-')">-</button>
+        <button onclick="mostrarElemento('4')">4</button>
+        <button onclick="mostrarElemento('5')">5</button>
+        <button onclick="mostrarElemento('6')">6</button>
+        <button onclick="mostrarElemento('+')">+</button>
+        <button onclick="mostrarElemento('1')">1</button>
+        <button onclick="mostrarElemento('2')">2</button>
+        <button onclick="mostrarElemento('3')">3</button>
+        <button class="btn-zero" onclick="mostrarElemento('0')">0</button>
+        <button onclick="mostrarElemento('.')">.</button>
+        <button class="result" onclick="calcular()">=</button>
+       </div>
+    </div>
 
-    <input class="display" type="" disabled> <!--disabled pra evitar que o usuario mexa diretamente -->
-    <section class="numbers">
-        <div>
-            <button class="tec2" onclick="cleanDisplay()">C</button>
-            <button class="operacionais" onclick="cleanLast()">x</button>
-            <button class="operacionais" onclick="takeValue('%')">%</button>
-            <button class="operacionais" onclick="takeValue('/')">/</button>
-
-        </div>
-
-        <div>
-            <button class="numeral" onclick="takeValue('7')">7</button>
-            <button class="numeral" onclick="takeValue('8')">8</button>
-            <button class="numeral" onclick="takeValue('9')">9</button>
-            <button class="operacionais" onclick="takeValue('*')">*</button>
-        </div>
-
-        <div>
-            <button class="numeral" onclick="takeValue('4')">4</button>
-            <button class="numeral" onclick="takeValue('5')">5</button>
-            <button class="numeral" onclick="takeValue('6')">6</button>
-            <button class="operacionais" onclick="takeValue('-')">-</button>
-        </div>
-
-        <div>
-            <button class="numeral" onclick="takeValue('1')">1</button>
-            <button class="numeral" onclick="takeValue('2')">2</button>
-            <button class="numeral" onclick="takeValue('3')">3</button>
-            <button class="operacionais" onclick="takeValue('+')">+</button>
-        </div>
-
-        <div>
-            <button class="numeral" onclick="takeValue('.')">.</button>
-            <button class="numeral" onclick="takeValue('0')">0</button>
-            <button class="numeral" onclick="takeValue(',')">,</button>
-            <button class="igual" onclick="calculate()">=</button>
-        </div>
-    </section>
-
+    <script src="app.js"></script>
 </body>
-<script src="app.js"></script>
-
 </html>
